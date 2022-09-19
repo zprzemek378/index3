@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Odpowiedzi do Familiady</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Odpowiedzi do Familiady</h1>
+        </div>
+
+        <div id="headerL">
+            Dodaj pytanie:
+        </br></br>
+            <input type="text" id="newQuestion" placeholder="Pytanie"/>
+        </br></br>
+            <input type="date" id="newQuestionDate"/>
+            <input type="time" id="newQuestionTime"/>
+        </br></br>
+            <input type="submit" id="addingQuestion" value="Dodaj" onclick="addQuestion()"/>
+        </div>
+
+        <div id="headerR">
+            Dodaj osobę:</br></br></br>
+            <input type="text" id="newPerson" placeholder="Imię osoby"/>
+            </br></br></br>
+            <input type="submit" id="addingName" value="Dodaj" onclick="addPerson()"/>
+        </div>
+
+        <div id="pick">
+            Dodaj odpowiedź:
+        </br></br>
+            <select id="questionChoice">
+                <option value="nothing">Wybierz pytanie</option>
+            </select>
+        </br></br>
+            <select id="personChoice">
+                <option value="nothing">Wybierz osobę</option>
+            </select>
+        </br></br>
+            <select id="answerChoice">
+                <option value="nothing">Wybierz odpowiedź</option>
+            </select>
+        </br>         
+            <input id="anotherAnswer" type="checkbox"/> 
+            Inna odpowiedź?
+            <input placeholder="Odpowiedź" id="newAnswerChoice" type="text"/>
+        </br></br>
+            <input type="date" id="newDateChoice"/>
+            <input type="time" id="newTimeChoice"/>
+        </br></br>        
+        <input type="submit" value="Dodaj" onclick="addAnswer()"/>
+
+        </div>
+
+    </br>
+        <div id="results">
+
+        </div>
+    </br>
+        <div id="results2">
+
+        </div>
+
+
+        
+    </div>
+</body>
+
+
+
+</html>
